@@ -1,5 +1,3 @@
-# World-class tech stack for Web entrepreneurs
-
 ## Build Setup
 
 ``` bash
