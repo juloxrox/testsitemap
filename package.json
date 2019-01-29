@@ -1,0 +1,23 @@
+{
+  "name": "testsitemap",
+  "version": "1.0.0",
+  "description": "My amazing Nuxt.js project",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "postbuild": "rimraf functions/ssr && mkdirp functions/ssr && cp -R .nuxt/dist functions/ssr/dist",
+    "buildwindows": "nuxt build",
+    "postbuildwindows": "rimraf functions/ssr && mkdirp functions/ssr && (robocopy .nuxt/dist functions/ssr/dist /s /e) ^& exit 0",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt-edge": "^2.4.0-25810574.3d0bc199",
+    "@nuxtjs/sitemap": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
